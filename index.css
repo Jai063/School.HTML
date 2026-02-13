@@ -1,0 +1,133 @@
+/* ---------- Base styles ---------- */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background-image: url('photos/beige.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #000;
+}
+
+/* ---------- Top left buttons ---------- */
+
+.top-nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 20;
+}
+
+.top-nav a {
+  background-color: rgb(33, 37, 47);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.top-nav a:hover {
+  background-color: rgb(50, 55, 70);
+  transform: translateY(-2px);
+}
+
+/* ---------- Layout container ---------- */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 120px;
+}
+
+/* ---------- Headings ---------- */
+
+h1 {
+  text-align: center;
+  background-color: rgb(33, 37, 47);
+  color: white;
+  padding: 18px;
+  border-radius: 12px;
+  letter-spacing: 1px;
+  font-family: Georgia, serif;
+}
+
+/* ---------- Paragraph ---------- */
+
+p {
+  background-color: rgba(245, 245, 220, 0.9);
+  padding: 24px 30px;
+  border-radius: 10px;
+  line-height: 1.7;
+  font-size: 19px;
+  margin-top: 30px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* ---------- Image boxes ---------- */
+
+.image-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.image-card {
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(33, 37, 47);
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.image-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.image-card span {
+  display: block;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.image-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+/* ---------- Bottom center image link ---------- */
+
+.bottom-image-link {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.bottom-image-link img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bottom-image-link img:hover {
+  transform: scale(1.1);
+}
