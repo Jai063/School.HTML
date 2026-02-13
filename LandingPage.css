@@ -1,0 +1,90 @@
+html {
+  background-color: beige;
+}
+
+body {
+  background-color: beige;
+  margin: 0;
+  padding: 40px;
+  font-family: Tahoma, Arial, sans-serif;
+  color: black;
+}
+
+body > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(33, 37, 47);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+p {
+  background-color: beige;
+  padding: 20px 30px;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.links {
+  background-color: beige;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.links a {
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(33, 37, 47);
+  font-weight: bold;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+html, body {
+  height: 100%;            
+  margin: 0;
+  padding: 0;              
+}
+
+body {
+  background-image: url('photos/beige.jpg');
+  background-size: cover;   
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: Tahoma, Arial, sans-serif;
+  padding: 40px;  
+      
+}
+
+.decor-bottom-left {
+  position: fixed;       /* stays in place even if scrolling */
+  bottom: 0;             /* aligns to bottom of screen */
+  left: 150;               /* aligns to left */
+  width: 25vw;           /* 1/4 of viewport width */
+  max-width: 480px;
+  height: auto;
+  z-index: 1;            /* makes sure it overlaps background but below main content if needed */
+  pointer-events: none;  /* optional: allows clicking links under the image */
+}
+
+
