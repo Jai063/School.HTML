@@ -105,3 +105,30 @@ a {
     letter-spacing: 0.5px;
 }
     
+
+ .back-to-top {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0;                
+  transition: opacity 0.5s;
+}
+
+
+.bottom-spacer {
+  height: 200px;             
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-spacer:target .back-to-top,
+.bottom-spacer:hover .back-to-top {
+  opacity: 1;
+}
