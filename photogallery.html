@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Photo Gallery</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+        background-image: url('photos/newbg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    header h1 {
+        display: inline-block;
+        background-color: white;
+        padding: 15px 80px;
+        border-radius: 12px;
+        margin-top: 40px;
+    }
+
+    .gallery-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+        transform: scale(1.05);
+    }
+
+    .nav-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-btn:hover {
+    background-color:  rgb(235, 213, 185);
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    right: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Photo Gallery</h1>
+</header>
+
+<a href="media.html" class="nav-btn back-btn">Back to Media</a>
+
+<div class="gallery-container">
+    <div class="gallery-grid">
+
+        <img src="photos/aiismyfriend.jpg">
+        <img src="photos/avengers.jpg">
+        <img src="photos/bbty.jpg">
+        <img src="photos/beats_cover.jpg">
+        <img src="photos/bigbike.jpg">
+        <img src="photos/chaseatlantic.jpg">
+        <img src="photos/daniel.jpg">
+        <img src="photos/danielc.jpg">
+        <img src="photos/daredevil.jpg">
+        <img src="photos/daredevilfe.jpg">
+        <img src="photos/entrep.jpg">
+        <img src="photos/meingym.jpg">
+        <img src="photos/frankocean.jpg">
+        <img src="photos/gunsnroses.jpg">
+        <img src="photos/house.jpg">
+        <img src="photos/interstellar.jpg">
+        <img src="photos/italy.jpg">
+        <img src="photos/IVOS.jpg">
+        <img src="photos/japan.jpg">
+        <img src="photos/london.jpg">
+        <img src="photos/longdrives.jpg">
+        <img src="photos/mountain.jpg">
+        <img src="photos/movie_cover.jpg">
+        <img src="photos/newbg.jpg">
+        <img src="photos/newzealand.jpg">
+        <img src="photos/OIP.jpg">
+        <img src="photos/punisher.jpg">
+        <img src="photos/racingsim.jpg">
+        <img src="photos/show_cover.jpg">
+        <img src="photos/snow.jpg">
+        <img src="photos/spain.jpg">
+        <img src="photos/spiderman.jpg">
+        <img src="photos/sportscar.jpg">
+        <img src="photos/trackrace.jpg">
+        <img src="photos/transformers.jpg">
+        <img src="photos/travelworld.jpg">
+        <img src="photos/verseone.jpg">
+        <img src="photos/jap1.jpg">
+        <img src="photos/jap2.jpg">
+        <img src="photos/jap3.jpg">
+        <img src="photos/jap4.jpg">
+        <img src="photos/jap5.jpg">
+        <img src="photos/lon1.jpg">
+        <img src="photos/lon2.jpg">
+        <img src="photos/lon3.jpg">
+        <img src="photos/lon4.jpg">
+        <img src="photos/italy1.jpg">
+        <img src="photos/italy2.jpg">
+        <img src="photos/italy3.jpg">
+        <img src="photos/italy4.jpg">
+        <img src="photos/nz1.jpg">
+        <img src="photos/nz3.jpg">
+        <img src="photos/newzealand.jpg">
+        <img src="photos/spain1.jpg">
+        <img src="photos/spain2.jpg">
+        <img src="photos/spain3.jpg">
+        <img src="photos/spain4.jpg">
+    </div>
+</div>
+
+</body>
+</html>

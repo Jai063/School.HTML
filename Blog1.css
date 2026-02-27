@@ -15,26 +15,26 @@
 
     h1, h2, h3 {
         font-family: Georgia, serif;
-        color: rgb(255, 255, 255);
+        color: black;
     }
 
     h1 {
         text-align: center;
-        background-color: rgb(33, 37, 47); 
-        color: white;
+        background-color: white ; 
+        color: black;
         padding: 15px;
         border-radius: 10px;
         letter-spacing: 1px;
     }
 
     h2 {
-        border-left: 6px solid white; 
+        border-left: 6px solid rgb(255, 255, 255); 
         padding-left: 12px;
         margin-top: 40px;
     }
 
     h3 {
-        border-left: 6px solid #7BAFD4; 
+        border-left: 6px solid rgb(255, 255, 255); 
         padding-left: 12px;
         margin-top: 40px;
     }
@@ -45,13 +45,14 @@
         border-radius: 8px;
         line-height: 1.6;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        font-size: 25px;
     }
 html {
   background-color:beige
 }
 
 body {
-  background-image: url('photos/beige.jpg');
+  background-image: url('photos/newbg.jpg');
   background-size: cover;   
   background-position: center;
   background-repeat: no-repeat;
@@ -76,8 +77,8 @@ a {
 }
 
 .top-nav a {
-  background-color: rgb(33, 37, 47);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
   padding: 10px 16px;
   border-radius: 8px;
   text-decoration: none;
@@ -86,8 +87,21 @@ a {
   transition: background 0.2s ease, transform 0.15s ease;
 }
 
-.top-nav a:hover {
-  background-color: rgb(50, 55, 70);
+.top-nav a:hover, #nextbtn:hover {
+  background-color:  rgb(235, 213, 185);
   transform: translateY(-2px);
+}
+
+#nextbtn{
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    background-color: white;
+    color: black;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
     

@@ -7,7 +7,7 @@ html, body {
 
 body {
   font-family: Tahoma, Arial, sans-serif;
-  background-image: url('photos/beige.jpg');
+  background-image: url('photos/newbg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,18 +27,19 @@ body {
 }
 
 .top-nav a {
-  background-color: rgb(33, 37, 47);
-  color: white;
+  background-color: rgb(255, 253, 253);
+  color: rgb(0, 0, 0);
   padding: 10px 16px;
   border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.5px;
   transition: background 0.2s ease, transform 0.15s ease;
 }
 
 .top-nav a:hover {
-  background-color: rgb(50, 55, 70);
+  background-color: rgb(235, 213, 185);
   transform: translateY(-2px);
 }
 
@@ -54,8 +55,8 @@ body {
 
 h1 {
   text-align: center;
-  background-color: rgb(33, 37, 47);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 18px;
   border-radius: 12px;
   letter-spacing: 1px;
